@@ -1,0 +1,25 @@
+.babdoku {
+  text-align: center;
+
+  .button {
+    border: none;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+
+    &-reset {
+      background-color: #130f40;
+    }
+
+    &-delete {
+      background-color: #f44336;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

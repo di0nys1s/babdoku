@@ -1,0 +1,29 @@
+.c-tiles {
+  margin: 1rem 0;
+
+  &__selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__sudoku {
+    display: grid;
+
+    &--6 {
+      grid-template-columns: repeat(3, 2rem);
+      grid-template-rows: repeat(2, 2rem);
+    }
+
+    &--9 {
+      grid-template-columns: repeat(3, 2rem);
+      grid-template-rows: repeat(3, 2rem);
+    }
+
+    &--4 {
+      grid-template-columns: repeat(2, 2rem);
+      grid-template-rows: repeat(2, 2rem);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.c-tile {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: #a2cf6e;
+  }
+
+  &__selected--Easy {
+    background-color: #a2cf6e;
+  }
+
+  &__label {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+  }
+
+  &__select-item {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__sudoku {
+    border: 1px solid #000;
+    padding: 0.5rem 0.75rem;
+  }
+}
