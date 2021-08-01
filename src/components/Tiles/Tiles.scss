@@ -1,11 +1,11 @@
 .c-tiles {
-  margin: 1rem 0;
-
   &__selection {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    margin: 2rem;
   }
 
   &__sudoku {
