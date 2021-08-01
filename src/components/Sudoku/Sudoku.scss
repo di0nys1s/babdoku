@@ -4,21 +4,17 @@
   align-items: center;
 
   &--4 {
+    grid-template-columns: repeat(2, 4.15rem);
     grid-template-rows: repeat(2, 4rem);
-    grid-template-columns: repeat(2, 4rem);
   }
 
   &--6 {
-    grid-template-columns: repeat(3, 6rem);
+    grid-template-columns: repeat(3, 6.15rem);
     grid-template-rows: repeat(2, 4rem);
   }
 
   &--9 {
-    grid-template-columns: repeat(3, 6rem);
+    grid-template-columns: repeat(3, 6.15rem);
     grid-template-rows: repeat(3, 6rem);
-  }
-
-  &--button-reset {
-    justify-self: center;
   }
 }

@@ -10,20 +10,39 @@
 
   &__sudoku {
     display: grid;
+    border: 1px solid #000;
+    border-left: none;
+
+    &--4 {
+      grid-template-columns: 2.1rem 2rem;
+      grid-template-rows: repeat(2, 2rem);
+
+      &:nth-child(-n + 2) {
+        border-top: none;
+      }
+    }
 
     &--6 {
-      grid-template-columns: repeat(3, 2rem);
+      grid-template-columns: 2.125rem 1.95rem 2rem;
       grid-template-rows: repeat(2, 2rem);
+
+      &:nth-child(-n + 3) {
+        border-top: none;
+      }
     }
 
     &--9 {
-      grid-template-columns: repeat(3, 2rem);
+      grid-template-columns: 2.125rem 1.95rem 2rem;
       grid-template-rows: repeat(3, 2rem);
-    }
 
-    &--4 {
-      grid-template-columns: repeat(2, 2rem);
-      grid-template-rows: repeat(2, 2rem);
+      &:nth-child(-n + 3) {
+        border-top: none;
+      }
     }
   }
+}
+
+.c-tiles__sudoku > button {
+  border-right: none;
+  border-bottom: none;
 }
